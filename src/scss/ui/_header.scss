@@ -3,4 +3,33 @@
 
 .site-header {
     @include mixins.bg-image('../img/header.jpg', vars.$color_secondary_opacity);
+    padding: 5rem 0;
+    
+    &__content {
+        margin-top: 10rem;
+    
+        @include mixins.desktop {
+            margin-top: 15rem;
+        }
+    }
+
+    &__heading {
+        color: vars.$color_white;
+        font-size: 4.5rem;
+        @include mixins.tablet {
+            max-width: 50%;
+            font-size: 6rem;
+        }
+        @include mixins.desktop {
+            max-width: 40%;
+        }
+    }
+}
+
+.logo {
+    max-width: 20rem;
+    margin: 0 auto;
+    @include mixins.tablet {
+        margin: 0;
+    }
 }
