@@ -1,0 +1,6 @@
+@use 'base/vars'; 
+@use 'base/mixins'; 
+
+.site-header {
+    @include mixins.bg-image('../img/header.jpg', vars.$color_secondary_opacity);
+}
