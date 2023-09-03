@@ -43,19 +43,9 @@ h2 {
     font-size: 3.6rem;
     display: inline-block;
     margin-top: 5rem;
-    color: v.$color_secondary;
-
+    
     @include m.tablet {
         margin-top: 0;
-    }
-
-    &::after {
-        background-color: v.$color_primary;
-        content: '';
-        display: block;
-        height: 1rem;
-        width: 104%;
-        margin-top: -1.5rem;
     }
 }
 h3 {

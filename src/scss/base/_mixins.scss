@@ -56,3 +56,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@mixin heading($color, $color-border) {
+
+    color: $color;
+
+    &::after {
+        background-color: $color-border;
+        content: '';
+        display: block;
+        height: 1rem;
+        width: 104%;
+        margin-top: -1.5rem;
+    }
+}
