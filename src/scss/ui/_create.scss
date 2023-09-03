@@ -15,4 +15,8 @@
             align-items: center;
         }
     }
+
+    &__heading {
+        @include mixins.heading( vars.$color_secondary, vars.$color_primary );
+    }
 }
