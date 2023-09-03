@@ -2,7 +2,5 @@
 @use 'base/mixins'; 
 
 .btn-primary {
-    @include mixins.button( vars.$color_primary, vars.$color_secondary );
-
-    
+    @include mixins.button( vars.$color_primary, vars.$color_secondary );   
 }

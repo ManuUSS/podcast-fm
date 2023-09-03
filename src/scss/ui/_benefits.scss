@@ -1,2 +1,28 @@
 @use 'base/vars'; 
 @use 'base/mixins'; 
+
+.benefits {
+    background-color: vars.$color_primary;
+    padding: 3rem 0;
+    @include mixins.tablet {
+        padding: 9rem 0;
+    }
+
+    &__grid {
+        @include mixins.tablet {
+            @include mixins.grid( 5, 4rem );
+            align-items: center;
+        }
+    }
+
+    &__content {
+        grid-column: 1 / 4;
+    }
+    &__image {
+        grid-column: 4 / 6;
+        transition: transform .3s ease-in-out;
+        &:hover {
+            transform: rotate(8deg) scale(1.1);
+        }
+    }
+}
