@@ -6,10 +6,12 @@
     padding: 5rem 0;
     
     &__content {
-        margin-top: 10rem;
-    
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        
         @include mixins.desktop {
-            margin-top: 15rem;
+            padding-top: 15rem;
+            padding-bottom: 15rem;
         }
     }
 
