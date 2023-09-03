@@ -1,0 +1,27 @@
+@use 'base/vars'; 
+@use 'base/mixins'; 
+
+.create {
+
+    padding: 3rem 0;
+
+    @include mixins.tablet {
+        padding: 8rem 0;
+    }
+
+    &__grid {
+        @include mixins.tablet {
+            @include mixins.grid( 2, 2rem);
+            align-items: center;
+        }
+    }
+
+    &__content {
+
+    }
+
+    &__image {
+
+    }
+
+}
