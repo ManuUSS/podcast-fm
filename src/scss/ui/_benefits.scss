@@ -25,4 +25,7 @@
             transform: rotate(8deg) scale(1.1);
         }
     }
+    &__heading {
+        @include mixins.heading( vars.$color_secondary, vars.$color_white )
+    }
 }
