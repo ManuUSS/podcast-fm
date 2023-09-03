@@ -1,0 +1,14 @@
+@use 'base/vars'; 
+@use 'base/mixins'; 
+
+.stats {
+    padding: 3rem 0;
+    
+    @include mixins.tablet {
+        padding: 9rem 0;
+    }
+
+    &__heading {
+        @include mixins.heading( vars.$color_secondary, vars.$color_primary );
+    }
+}

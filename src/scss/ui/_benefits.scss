@@ -26,6 +26,6 @@
         }
     }
     &__heading {
-        @include mixins.heading( vars.$color_secondary, vars.$color_white )
+        @include mixins.heading( vars.$color_secondary, vars.$color_white );
     }
 }
