@@ -29,12 +29,26 @@
 }
 
 .plan {
+    background-color: vars.$color_white;
+    flex-grow: 1;
+    padding: 16rem 4rem 4rem 4rem;
 
+    &--init {
+        @include mixins.bg-icon();
+    }
+    
     &--bussiness {
         order: -1;
-
+        
+        @include mixins.bg-icon();
+        
         @include mixins.tablet {
             order: unset;
         }
+    }
+    
+    &--pro {
+        @include mixins.bg-icon();
+
     }
 }

@@ -70,3 +70,10 @@
         margin-top: -1.5rem;
     }
 }
+
+@mixin bg-icon( $ur ) {
+    background-image: url( $url );
+    background-repeat: no-repeat;
+    background-size: 10;
+    background-position: top center;
+}
