@@ -37,6 +37,10 @@
     padding: 16rem 4rem 4rem 4rem;
     border-bottom: 1px solid #E1E1E1;
     
+    @include mixins.tablet {
+        border-bottom: unset;
+    }
+
     &--init {
         @include mixins.bg-icon('../img/icono_inicio.svg');
     }

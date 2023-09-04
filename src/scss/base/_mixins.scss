@@ -71,9 +71,9 @@
     }
 }
 
-@mixin bg-icon( $ur ) {
+@mixin bg-icon( $url ) {
     background-image: url( $url );
     background-repeat: no-repeat;
-    background-size: 10;
+    background-size: 10rem;
     background-position: 50% 2rem;
 }
