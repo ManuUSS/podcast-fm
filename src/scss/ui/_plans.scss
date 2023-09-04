@@ -49,6 +49,10 @@
         
         @include mixins.tablet {
             order: unset;
+            margin: -5rem 0;
+            padding-top: 21rem;
+            border-radius: 2rem;
+            background-position: 50% 7rem;
         }
     }
     
