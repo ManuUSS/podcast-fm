@@ -4,3 +4,9 @@
 .btn-primary {
     @include mixins.button( vars.$color_primary, vars.$color_secondary );   
 }
+
+.plan__btn {
+    @extend .btn-primary;  
+    border: 2px solid vars.$color_white;
+    margin-top: 2rem; 
+}
