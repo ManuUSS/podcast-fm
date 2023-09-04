@@ -1,0 +1,40 @@
+@use 'base/vars'; 
+@use 'base/mixins'; 
+
+.plans {
+    background-color: vars.$color_secondary;
+    padding: 3rem 0;
+
+    @include mixins.tablet {
+        padding: 9rem 0;
+    }
+
+    &__heading {
+        @include mixins.heading( vars.$color_white, vars.$color_primary );
+    }
+
+    &__text {
+        color: vars.$color_white;
+    }
+
+    &__our-plans {
+        display: flex;
+        flex-direction: column;
+
+        @include mixins.tablet {
+            flex-direction: row;
+        }
+    }
+
+}
+
+.plan {
+
+    &--bussiness {
+        order: -1;
+
+        @include mixins.tablet {
+            order: unset;
+        }
+    }
+}
